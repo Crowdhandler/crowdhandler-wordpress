@@ -16,7 +16,7 @@
  * Plugin Name:       CrowdHandler virtual waiting room
  * Plugin URI:        https://signup.crowdhandler.com/?utm_source=WordPress&utm_medium=Plugin_Dir
  * Description:       During periods of heavy traffic, our queue management solution helps safeguard your website from crashing and protects your sales.
- * Version:           1.1.1
+ * Version:           1.1.3
  * Author:            CROWDHANDLER LTD
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -38,7 +38,7 @@ require_once CROWDHANDLER_PLUGIN_BASE_PATH . 'vendor/autoload.php';
  * Start at version 0.1.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('CROWDHANDLER_VERSION', '1.1.1');
+define('CROWDHANDLER_VERSION', '1.1.3');
 
 /**
  * The code that runs during plugin activation.
