@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28f4a180d955f81509968e128c077df8",
+    "content-hash": "761bd3f834865a086ab764d8c6d16706",
     "packages": [
         {
             "name": "crowdhandler/sdk",
@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crowdhandler/crowdhandler-php-sdk.git",
-                "reference": "e94b2a5ee78eb18b96afd2dd34891f5825a4e246"
+                "reference": "9b7282a2efd9f4ada0e1767340c6bef24518aee7"
             },
             "require": {
                 "ext-curl": "*",
@@ -25,6 +25,9 @@
                     "CrowdHandler\\": "src/"
                 }
             },
+            "license": [
+                "BSD-3-Clause"
+            ],
             "authors": [
                 {
                     "name": "richard-mutt-crowdhandler",
@@ -41,17 +44,17 @@
             ],
             "description": "A PHP library for interacting with CrowdHandler",
             "homepage": "https://www.crowdhandler.com/",
-            "time": "2021-01-12T12:55:08+00:00"
+            "time": "2021-11-12T15:17:01+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "wordpress/wordpress",
-            "version": "5.6.1",
+            "version": "5.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wordpress-develop.git",
-                "reference": "2a8b96b363d7280e53cb46086ca68ca6122e275e"
+                "reference": "a592701df3bc2f55d8035d041bda711e05403148"
             },
             "require": {
                 "php": ">=5.6"
@@ -60,7 +63,8 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7.0",
                 "phpcompatibility/phpcompatibility-wp": "^2.1.0",
                 "phpunit/phpunit": "^7.5",
-                "wp-coding-standards/wpcs": "~2.3.0"
+                "wp-coding-standards/wpcs": "~2.3.0",
+                "yoast/phpunit-polyfills": "^1.0.1"
             },
             "type": "library",
             "autoload-dev": {
@@ -108,7 +112,7 @@
             "support": {
                 "issues": "https://core.trac.wordpress.org/"
             },
-            "time": "2021-02-03T21:10:21+00:00"
+            "time": "2021-11-10T17:14:24+00:00"
         }
     ],
     "aliases": [],
@@ -121,6 +125,5 @@
     "platform": {
         "php": ">=5.3"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
