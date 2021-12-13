@@ -52,6 +52,7 @@ class CrowdHandlerGateKeeper
 		$this->gateKeeper->checkRequest();
 		$this->gateKeeper->redirectIfNotPromoted();
 		$this->gateKeeper->setCookie();
+		$this->gateKeeper->setFailTrust(true);
 
 		$this->requestChecked = true;
 
