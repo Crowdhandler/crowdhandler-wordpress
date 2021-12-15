@@ -1,0 +1,13 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.crowdhandler-input--textarea {
+	max-width: 40em;
+	width: 100%;
+	resize: vertical;
+}
+
+.toplevel_page_crowdhandler h1 {
+	color: #206D9C
+}
