@@ -47,7 +47,7 @@ class CrowdHandlerGateKeeper
 		$this->gateKeeper = new GateKeeper($api);
 		
 		$this->gateKeeper->setIgnoreUrls(
-			"/^(.*(?<!\?)\.(ico|css|js|json|pdf|xml|eot|ott|ttf|woff|woff2|gif|jpg|jpeg|png|svg|avi|mov|mp4|mpeg|mpg|wmv|ogg|ogv)(\/*)$)|(^.*\/?w[c|p]-.+)|(^.*\/robots.txt)|(\/wp-includes)|(^.*\/xmlrpc.php)/"
+			"/^(.*(?<!\?)\.(ico|css|js|json|pdf|xml|eot|ott|ttf|woff|woff2|gif|jpg|jpeg|png|svg|avi|mov|mp4|mpeg|mpg|wmv|ogg|ogv)(\/*)$)|(^.*w[c|p]-.+)|(^.*(?<!\?)\/robots.txt)|(^.*(?<!\?)\/xmlrpc.php)/"
 		);
 		
 		$this->gateKeeper->checkRequest();
