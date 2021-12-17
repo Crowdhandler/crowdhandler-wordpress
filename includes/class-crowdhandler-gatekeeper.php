@@ -49,10 +49,22 @@ class CrowdHandlerGateKeeper
 		$this->gateKeeper->setIgnoreUrls(
 			"/^(.*\.(ico|css|js|json|pdf|xml|eot|ott|ttf|woff|woff2|gif|jpg|png|svg|avi|mov|mp4|mpeg|mpg|wmv|ogg|ogv)(\/*)$)|(\/wp-admin)|(\/wp-content)|(\/wp-includes)|(\/wp\-cron\.php)/"
 		);
-		$this->gateKeeper->checkRequest();
-		$this->gateKeeper->redirectIfNotPromoted();
-		$this->gateKeeper->setCookie();
-		$this->gateKeeper->setFailTrust(true);
+
+		$isWordPressRequest = false;
+		$isHostServer = $this->gateKeeper->ip === $_SERVER["SERVER_ADDR"];
+
+		$search = 'wordpress';
+		if(preg_match("/{$search}/i", $this->gateKeeper->agent)) {
+			$isWordPressRequest = true;
+		}
+
+		if (!$isWordPressRequest && $isHostServer) {
+			$this->gateKeeper->setFailTrust(true);
+			$this->gateKeeper->checkRequest();
+			$this->gateKeeper->setCookie();
+			$this->gateKeeper->redirectIfNotPromoted();
+		}
+
 
 		$this->requestChecked = true;
 
