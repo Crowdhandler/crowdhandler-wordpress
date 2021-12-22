@@ -50,15 +50,9 @@ class CrowdHandlerGateKeeper
 			"/^(.*\.(ico|css|js|json|pdf|xml|eot|ott|ttf|woff|woff2|gif|jpg|png|svg|avi|mov|mp4|mpeg|mpg|wmv|ogg|ogv)(\/*)$)|(\/wp-admin)|(\/wp-content)|(\/wp-includes)|(\/wp\-cron\.php)/"
 		);
 
-		$isWordPressRequest = false;
 		$isHostServer = $this->gateKeeper->ip === $_SERVER["SERVER_ADDR"];
 
-		$search = 'wordpress';
-		if(preg_match("/{$search}/i", $this->gateKeeper->agent)) {
-			$isWordPressRequest = true;
-		}
-
-		if (!$isWordPressRequest && $isHostServer) {
+		if (!$isHostServer) {
 			$this->gateKeeper->setFailTrust(true);
 			$this->gateKeeper->checkRequest();
 			$this->gateKeeper->setCookie();
