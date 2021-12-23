@@ -49,11 +49,16 @@ class CrowdHandlerGateKeeper
 		$this->gateKeeper->setIgnoreUrls(
 			"/^((?!.*\?).*(\.(avi|css|eot|gif|ico|jpg|jpeg|js|json|mov|mp4|mpeg|mpg|og[g|v]|pdf|png|svg|ttf|txt|wmv|woff|woff2|xml))$)|(?!.*\?.*w[c|p]-.+).*(^.*w[c|p]-.+)|^((?!.*\?.*xmlrpc\.php).*xmlrpc.php)|\?rest_route=.+/"
 		);
-		
-		$this->gateKeeper->checkRequest();
-		$this->gateKeeper->redirectIfNotPromoted();
-		$this->gateKeeper->setCookie();
-		$this->gateKeeper->setFailTrust(true);
+
+		$isHostServer = $this->gateKeeper->ip === $_SERVER["SERVER_ADDR"];
+
+		if (!$isHostServer) {
+			$this->gateKeeper->setFailTrust(true);
+			$this->gateKeeper->checkRequest();
+			$this->gateKeeper->setCookie();
+			$this->gateKeeper->redirectIfNotPromoted();
+		}
+
 
 		$this->requestChecked = true;
 
