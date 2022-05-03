@@ -24,7 +24,7 @@ Not just for when you’re expecting company, make sure your website is always p
 **Get it running in no time**
 This plugin provides a simple installation of CrowdHandler on your WordPress site, giving you immediate access to our virtual waiting room in minutes.
 
-You will need to create an account at [crowdhandler.com](https://signup.crowdhandler.com/?utm_source=WordPress&utm_medium=Plugin_Dir). Free and paid plans are available.
+You will need to create an account at [crowdhandler.com](https://signup.crowdhandler.com/?utm_source=WordPress&utm_medium=Plugin_Dir). Free and paid plans are available. Note: There is no need to install our JavaScript code if you intend to use the WordPress plugin.
 
 == Installation ==
 
@@ -49,6 +49,7 @@ After installation, you need to configure the plugin:
 1. Check the "enabled" option. This will activate CrowdHandler for the site.
 1. Configure optional settings
 1. Select "Save Settings"
+1. [Read this note] (https://support.crowdhandler.com/support/solutions/articles/80001017374-crowdhandler-wordpress-plugin-and-caching-incompatibliities) about caching plugin incompatibilities 
 
 Optional settings:
 
