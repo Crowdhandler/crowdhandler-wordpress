@@ -52,7 +52,7 @@ After installation, you need to configure the plugin:
 
 Optional settings:
 
-* **Override index.php**: activating this option allows CrowdHandler to run in place of your WordPress website's default homepage. If you do not wish to do this, then your own server will take the load for all traffic to the homepage. For periods of very high demand, this may not be ideal.
+* **Override index.php**: activating this option allows CrowdHandler to run the queue check and offload users before booting WordPress for each request, putting considerably less load on your server and database. Some servers will not allow this due to write permissions. If you are able to use this option you should.
 
 == Frequently Asked Questions ==
 
