@@ -43,12 +43,11 @@ The CrowdHandler plugin is available to install via the WordPress plugin directo
 
 After installation, you need to configure the plugin:
 
-1. Access the settings page at `[yoursite.com]/wp-admin/admin.php?page=crowdhandler`
-1. Get your CrowdHandler API Public Key from the [CrowdHandler admin interface](https://admin.crowdhandler.com/account/api)
-1. Add your CrowdHandler API Public Key in the field labelled "Public Key"
-1. Check the "enabled" option. This will activate CrowdHandler for the site.
-1. Configure optional settings
-1. Select "Save Settings"
+1. Go to https://signup.crowdhandler.com to create a CrowdHandler account.
+1. Note you do not need to install the CrowdHandler JavaScript when using the WordPress plugin 
+1. In the CrowdHandler control panel, go to Domains > Deployment Settings
+1. Select ‘WordPress’ as the Deployment Option and ’Save’.
+1. Our guide will walk you through configuring the plug-in.
 
 Optional settings:
 
