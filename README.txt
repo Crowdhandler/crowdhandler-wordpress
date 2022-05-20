@@ -2,7 +2,7 @@
 Contributors: rickmutt
 Tags: waiting room, traffic management, queue management, ecommerce, CrowdHandler, 
 Tested up to: 5.8
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,8 @@ You can uninstall the plugin at any time to remove CrowdHandler from your site. 
 
 
 == Changelog ==
+= 1.1.7 =
+* Updated readme.txt. 
 = 1.1.6 =
 * Improvements to WordPress and WooCommerce admin functionality while a queue is engaged. 
 * Updated php-sdk. 
