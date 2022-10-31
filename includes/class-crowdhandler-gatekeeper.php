@@ -6,7 +6,7 @@ use CrowdHandler\PublicClient;
 class CrowdHandlerGateKeeper
 {
 	/**
-	 * @var GateKeeper
+	 * @var CrowdHandlerWordPressGateKeeper
 	 */
 	private $gateKeeper;
 
@@ -44,7 +44,7 @@ class CrowdHandlerGateKeeper
 		}
 
 		$api = new PublicClient($this->options['crowdhandler_settings_field_public_key']);
-		$this->gateKeeper = new GateKeeper($api);
+		$this->gateKeeper = new CrowdHandlerWordPressGateKeeper($api);
 		
 		$this->gateKeeper->setIgnoreUrls(
 			"/^((?!.*\?).*(\.(avi|css|eot|gif|ico|jpg|jpeg|js|json|mov|mp4|mpeg|mpg|og[g|v]|pdf|png|svg|ttf|txt|wmv|woff|woff2|xml))$)|(?!.*\?.*w[c|p]-.+).*(^.*w[c|p]-.+)|^((?!.*\?.*xmlrpc\.php).*xmlrpc.php)|\?rest_route=.+/"
