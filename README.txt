@@ -2,7 +2,7 @@
 Contributors: rickmutt
 Tags: waiting room, traffic management, queue management, ecommerce, CrowdHandler, 
 Tested up to: 6.0
-Stable tag: 1.1.8
+Stable tag: 1.1.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,8 @@ You can uninstall the plugin at any time to remove CrowdHandler from your site. 
 
 
 == Changelog ==
+= 1.1.9 =
+* Compatibility change for crowdhHandler-php-skd release 1.05
 = 1.1.8 =
 * Compatible with WP v6.0 
 = 1.1.7 =
