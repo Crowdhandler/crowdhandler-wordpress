@@ -6,7 +6,7 @@ use CrowdHandler\PublicClient;
 class CrowdHandlerGateKeeper
 {
 	/**
-	 * @var CrowdHandlerWordPressGateKeeper
+	 * @var GateKeeper
 	 */
 	private $gateKeeper;
 
