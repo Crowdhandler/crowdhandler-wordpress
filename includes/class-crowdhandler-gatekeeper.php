@@ -47,7 +47,7 @@ class CrowdHandlerGateKeeper
 		$this->gateKeeper = new GateKeeper($api);
 		
 		$this->gateKeeper->setIgnoreUrls(
-			"/^((?!.*\?).*(\.(avi|css|eot|gif|ico|jpg|jpeg|js|json|mov|mp4|mpeg|mpg|og[g|v]|pdf|png|svg|ttf|txt|wmv|woff|woff2|xml))$)|(?!.*\?.*w[c|p]-.+).*(^.*w[c|p]-.+)|^((?!.*\?.*xmlrpc\.php).*xmlrpc.php)|\?rest_route=.+/"
+			"/^((?!.*\?).*(\.(avi|css|eot|gif|ico|jpg|jpeg|js|json|mov|mp4|mpeg|mpg|og[g|v]|pdf|png|svg|tiff|ttf|txt|wmv|woff|woff2|xml))$)|.*(^.*w[c|p]-.+)|^((?!.*\?.*xmlrpc\.php).*xmlrpc.php)|\?rest_route=.+/"
 		);
 
 		$isHostServer = $this->gateKeeper->ip === $_SERVER["SERVER_ADDR"];
