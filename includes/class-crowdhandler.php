@@ -169,6 +169,9 @@ class Crowdhandler
 			$this->loader->add_action('plugins_loaded', $plugin_public, 'checkRequest');
 			$this->loader->add_action('shutdown', $plugin_public, 'recordPerformance');
 		}
+		
+		$diagnostics = new CrowdhandlerDiagnostics();
+		$this->loader->add_filter('wp_headers', $diagnostics, 'addCHDiagnostics', 999);
 	}
 
 	/**
