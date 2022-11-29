@@ -90,7 +90,7 @@ You can uninstall the plugin at any time to remove CrowdHandler from your site. 
 
 == Changelog ==
 = 1.1.9 =
-* Compatibility change for crowdhHandler-php-skd release 1.0.5 and added crowdhandler diagnostics
+* Compatibility change for crowdhandler-php-skd release 1.0.5 and added crowdhandler diagnostics
 = 1.1.8 =
 * Compatible with WP v6.0 
 = 1.1.7 =
