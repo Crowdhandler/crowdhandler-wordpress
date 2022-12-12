@@ -22,9 +22,10 @@ class CrowdhandlerDiagnostics
 	{
 		if($this->options){
 			$indexOverride = (isset($this->options['crowdhandler_settings_field_override_index'])) ? '1' : '0';
+			$isEnabled = (isset($this->options['crowdhandler_settings_field_is_enabled'])) ? '1' : '0';
 			$timestamp = new DateTime();
 			$formatedTime = $timestamp->format(DateTime::ISO8601);
-			$headers['x-crowdhandler-info'] = $this->options['crowdhandler_settings_field_public_key'] . '::' . $indexOverride . '::' . $formatedTime;
+			$headers['x-crowdhandler-info'] = $this->options['crowdhandler_settings_field_public_key'] . '::' . $indexOverride . '::' . $isEnabled .'::' . $formatedTime;
 		}
 		return $headers;
 	}
