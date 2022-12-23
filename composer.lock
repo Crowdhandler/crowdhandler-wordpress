@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crowdhandler/crowdhandler-php-sdk.git",
-                "reference": "d44183a3c0e56b3ee1eaaa68665217d0fbbe10fe"
+                "reference": "3c5eec39e12641b469e0f3c062631646c9bd621a"
             },
             "require": {
                 "ext-curl": "*",
@@ -45,7 +45,7 @@
             ],
             "description": "A PHP library for interacting with CrowdHandler",
             "homepage": "https://www.crowdhandler.com/",
-            "time": "2022-12-16T12:18:42+00:00"
+            "time": "2022-12-23T10:16:00+00:00"
         }
     ],
     "packages-dev": [
