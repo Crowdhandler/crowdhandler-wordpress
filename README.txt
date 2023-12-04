@@ -1,7 +1,7 @@
 === CrowdHandler virtual waiting room ===
 Contributors: rickmutt
 Tags: waiting room, traffic management, queue management, ecommerce, CrowdHandler, 
-Tested up to: 6.1.1
+Tested up to: 6.4.1
 Stable tag: 1.1.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,10 +43,11 @@ The CrowdHandler plugin is available to install via the WordPress plugin directo
 
 After installation, you need to configure the plugin:
 
-1. Go to https://www.crowdhandler.com/sign-up to create a CrowdHandler account.
-1. Note you do not need to install the CrowdHandler JavaScript when using the WordPress plugin 
+1. Go to [https://www.crowdhandler.com/sign-up](https://www.crowdhandler.com/sign-up) to create a CrowdHandler account.
+1. Log into your account at [admin.crowdhandler.com](https://admin.crowdhandler.com) 
 1. Work through the onboarding guide to set up your waiting room.
-1. Select ‘WordPress’ as your implementation at the end and follow the insctructions to connect to your plugin.
+1. Select ‘WordPress’ as your implementation at the end and follow the instructions to connect to your plugin.
+1. Note you do not need to install the CrowdHandler JavaScript when using the WordPress plugin 
 
 Optional settings:
 
