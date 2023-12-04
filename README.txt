@@ -1,8 +1,8 @@
 === CrowdHandler virtual waiting room ===
 Contributors: rickmutt
 Tags: waiting room, traffic management, queue management, ecommerce, CrowdHandler, 
-Tested up to: 6.1.1
-Stable tag: 1.1.11
+Tested up to: 6.4.1
+Stable tag: 1.1.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ Not just for when you’re expecting company, make sure your website is always p
 **Get it running in no time**
 This plugin provides a simple installation of CrowdHandler on your WordPress site, giving you immediate access to our virtual waiting room in minutes.
 
-You will need to create an account at [crowdhandler.com](https://signup.crowdhandler.com/?utm_source=WordPress&utm_medium=Plugin_Dir). Free and paid plans are available.
+You will need to create an account at [crowdhandler.com](https://www.crowdhandler.com/sign-up?utm_source=WordPress&utm_medium=Plugin_Dir). Free and paid plans are available.
 
 == Installation ==
 
@@ -43,11 +43,11 @@ The CrowdHandler plugin is available to install via the WordPress plugin directo
 
 After installation, you need to configure the plugin:
 
-1. Go to https://signup.crowdhandler.com to create a CrowdHandler account.
+1. Go to [https://www.crowdhandler.com/sign-up](https://www.crowdhandler.com/sign-up) to create a CrowdHandler account.
+1. Log into your account at [admin.crowdhandler.com](https://admin.crowdhandler.com) 
+1. Work through the onboarding guide to set up your waiting room.
+1. Select ‘WordPress’ as your implementation at the end and follow the instructions to connect to your plugin.
 1. Note you do not need to install the CrowdHandler JavaScript when using the WordPress plugin 
-1. In the CrowdHandler control panel, go to Domains > Deployment Settings
-1. Select ‘WordPress’ as the Deployment Option and ’Save’.
-1. Our guide will walk you through configuring the plug-in.
 
 Optional settings:
 
@@ -57,7 +57,7 @@ Optional settings:
 
 = Do I need a CrowdHandler account to use this plugin? =
 
-Yes. You can [sign up at crowdhandler.com](https://signup.crowdhandler.com/?utm_source=WordPress&utm_medium=Plugin_Dir). Free and paid plans are available.
+Yes. You can [sign up at crowdhandler.com](https://www.crowdhandler.com/sign-up?utm_source=WordPress&utm_medium=Plugin_Dir). Free and paid plans are available.
 
 = I've set things up, but how do I configure my waiting room? =
 
@@ -65,7 +65,7 @@ This plugin installs CrowdHandler's waiting room onto your WordPress site. Crowd
 
 = Where can I get more help with setting things up? =
 
-Our [knowledge base](https://support.crowdhandler.com/) contains in depth documentation on CrowdHandler. If there is anything else you need to know, please submit a [support ticket](https://support.crowdhandler.com/support/tickets/new)
+Our [knowledge base](https://www.crowdhandler.com/support) contains in depth documentation on CrowdHandler. If there is anything else you need to know, please submit a [support ticket](https://support.crowdhandler.com/support/tickets/new)
 
 = What are the CrowdHandler Terms of Service? =
 
@@ -89,6 +89,8 @@ You can uninstall the plugin at any time to remove CrowdHandler from your site. 
 
 
 == Changelog ==
+= 1.1.12 =
+* Updated installation guide
 = 1.1.11 =
 * Compatibility change for crowdhandler-php-skd release 1.0.7 and updated crowdhandler diagnostics
 = 1.1.10 =
