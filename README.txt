@@ -1,8 +1,8 @@
 === CrowdHandler virtual waiting room ===
 Contributors: rickmutt
 Tags: waiting room, traffic management, queue management, ecommerce, CrowdHandler, 
-Tested up to: 6.4.1
-Stable tag: 1.1.12
+Tested up to: 6.7.2
+Stable tag: 1.1.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,8 @@ You can uninstall the plugin at any time to remove CrowdHandler from your site. 
 
 
 == Changelog ==
+= 1.1.13 =
+* Compatibility change for crowdhandler-php-skd release 1.0.8
 = 1.1.12 =
 * Updated installation guide
 = 1.1.11 =
