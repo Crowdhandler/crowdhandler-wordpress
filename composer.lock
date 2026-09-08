@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57436c0fffb56769f8423ab5d32c6d48",
+    "content-hash": "81ea3b70b1e45f86517e4cb89170711c",
     "packages": [
         {
             "name": "crowdhandler/sdk",
@@ -107,7 +107,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
