@@ -167,7 +167,10 @@ class Crowdhandler_Admin
 		register_setting(
 			'crowdhandler',
 			'crowdhandler_settings',
-			array('sanitize_callback' => array($this, 'sanitize_settings'))
+			array(
+				'type' => 'array',
+				'sanitize_callback' => array($this, 'sanitize_settings'),
+			)
 		);
 
 		add_settings_section(
