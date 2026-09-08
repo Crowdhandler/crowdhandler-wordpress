@@ -4,22 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "761bd3f834865a086ab764d8c6d16706",
+    "content-hash": "57436c0fffb56769f8423ab5d32c6d48",
     "packages": [
         {
             "name": "crowdhandler/sdk",
-            "version": "dev-master",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/crowdhandler/crowdhandler-php-sdk.git",
-                "reference": "3c5eec39e12641b469e0f3c062631646c9bd621a"
+                "reference": "c154df1043f8d51216785abc398177f1925e381b"
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
-                "php": ">= 5.3"
+                "php": ">=7.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -45,17 +44,17 @@
             ],
             "description": "A PHP library for interacting with CrowdHandler",
             "homepage": "https://www.crowdhandler.com/",
-            "time": "2022-12-23T10:16:00+00:00"
+            "time": "2026-09-08T14:13:30+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "wordpress/wordpress",
-            "version": "5.9.5",
+            "version": "5.9.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/wordpress-develop.git",
-                "reference": "7268fe465f2589a7dc793e3f93aceea763f1aded"
+                "reference": "97bbefb1253db8232b40e82e86b5b4ef49a4bb5d"
             },
             "require": {
                 "php": ">=5.6"
@@ -99,14 +98,12 @@
             "support": {
                 "issues": "https://core.trac.wordpress.org/"
             },
-            "time": "2022-10-17T20:16:15+00:00"
+            "time": "2024-06-24T17:08:47+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "crowdhandler/sdk": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

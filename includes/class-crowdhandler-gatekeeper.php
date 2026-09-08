@@ -50,7 +50,10 @@ class CrowdHandlerGateKeeper
 			"/^((?!.*\?).*(\.(avi|css|eot|gif|ico|jpg|jpeg|js|json|mov|mp4|mpeg|mpg|og[g|v]|pdf|png|svg|tiff|ttf|txt|wmv|woff|woff2|xml))$)|.*(^.*w[c|p]-.+)|^((?!.*\?.*xmlrpc\.php).*xmlrpc.php)|\?rest_route=.+/"
 		);
 
-		$isHostServer = $this->gateKeeper->ip === $_SERVER["SERVER_ADDR"];
+		// SERVER_ADDR is not populated by every SAPI (CLI, WP-Cron loopbacks and some
+		// FastCGI setups omit it), so read it defensively to avoid a PHP warning.
+		$serverAddress = isset($_SERVER["SERVER_ADDR"]) ? $_SERVER["SERVER_ADDR"] : null;
+		$isHostServer = $serverAddress !== null && $this->gateKeeper->ip === $serverAddress;
 
 		if (!$isHostServer) {
 			$this->gateKeeper->setFailTrust(true);
