@@ -164,7 +164,14 @@ class Crowdhandler_Admin
 
 	public function settings_init()
 	{
-		register_setting('crowdhandler', 'crowdhandler_settings');
+		register_setting(
+			'crowdhandler',
+			'crowdhandler_settings',
+			array(
+				'type' => 'array',
+				'sanitize_callback' => array($this, 'sanitize_settings'),
+			)
+		);
 
 		add_settings_section(
 			'crowdhandler_settings_section',
@@ -210,6 +217,40 @@ class Crowdhandler_Admin
 		);
 
 
+	}
+
+	/**
+	 * Sanitize the settings before they are stored.
+	 *
+	 * The public key is echoed back in the x-crowdhandler-info response header,
+	 * so it must never carry line breaks. Checkboxes are stored as 'on' or
+	 * omitted entirely, which is the shape the rest of the plugin expects.
+	 */
+	public function sanitize_settings($input)
+	{
+		$output = array();
+
+		if (!is_array($input)) {
+			return $output;
+		}
+
+		if (isset($input['crowdhandler_settings_field_public_key'])) {
+			$key = sanitize_text_field($input['crowdhandler_settings_field_public_key']);
+			$output['crowdhandler_settings_field_public_key'] = trim(str_replace(array("\r", "\n"), '', $key));
+		}
+
+		$checkboxes = array(
+			'crowdhandler_settings_field_override_index',
+			'crowdhandler_settings_field_is_enabled',
+		);
+
+		foreach ($checkboxes as $checkbox) {
+			if (isset($input[$checkbox]) && $input[$checkbox] === 'on') {
+				$output[$checkbox] = 'on';
+			}
+		}
+
+		return $output;
 	}
 
 	public function settings_section_callback($args)

@@ -2,8 +2,8 @@
 	"name": "crowdhandler/crowdhandler-wordpress",
 	"type": "project",
 	"require": {
-		"php": ">=5.3",
-		"crowdhandler/sdk": "dev-master"
+		"php": ">=7.4",
+		"crowdhandler/sdk": "^1.0.10"
 	},
 	"license": "GPL-2.0-or-later",
 	"authors": [

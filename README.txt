@@ -1,8 +1,10 @@
 === CrowdHandler virtual waiting room ===
 Contributors: rickmutt
 Tags: waiting room, traffic management, queue management, ecommerce, CrowdHandler, 
-Tested up to: 6.7.2
-Stable tag: 1.1.13
+Requires at least: 5.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Stable tag: 1.1.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +91,16 @@ You can uninstall the plugin at any time to remove CrowdHandler from your site. 
 
 
 == Changelog ==
+= 1.1.15 =
+* Tested up to WordPress 7.1
+* Fixed a PHP warning emitted on every front-end request when SERVER_ADDR is not set
+* Fixed a PHP warning when no public key has been saved
+* Declared Requires at least and Requires PHP in the plugin header and readme
+* Updated the CrowdHandler PHP SDK to 1.0.10, clearing PHP 8.4 deprecations
+= 1.1.14 =
+* Updated the CrowdHandler PHP SDK
+* Fixed the waiting room being skipped on sites behind a reverse proxy that terminates TLS upstream
+* Diagnostics header now reports index override and enabled state as separate flags
 = 1.1.13 =
 * Compatibility change for crowdhandler-php-skd release 1.0.8
 = 1.1.12 =
